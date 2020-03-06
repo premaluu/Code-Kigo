@@ -1,0 +1,309 @@
+* {
+	margin: 0;
+	padding:0;
+}
+.header {
+	background-image: url('header.jpg');
+	width:100%;
+	height:100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position:cover;
+	line-height: 100px;
+	text-align:center;
+	color:white;
+	font-size: 30px;
+	font-family: 'Poppins', serif;
+	transition: 0.8s;
+}
+.header:hover {
+	filter:blur(0px);
+}
+.header-container{
+		text-align:center;
+		color:white;
+		font-size: 38px;
+		font-family: 'Poppins', cursive;
+}
+ .type{
+ 	width: 400px;
+ 	height: 100px;
+	 overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+    typing 3.5s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 400px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent}
+  50% { border-color: orange; }
+}
+.header-container-logo {
+	padding-top:30px;
+	position:relative;
+	float: center;		
+	height:200px;
+	width:200px;
+	filter:blur(0px);
+}
+.main {
+	background-color:#f7f7f7;
+	text-align:center;
+	width:100%;
+	height:100%;
+	color:black;
+	font-family:'Poppins', sans-serif;
+}
+.main h1 {
+	padding-top: 50px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.main-desc {
+	height:100%;
+	width:100%;
+}
+.main-desc h2 {
+	padding:30px;
+}
+
+.lesson-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+.lessons {
+	display: flex;
+	justify-content: space-between;
+}
+.lesson {
+  flex: auto;
+  height: 450px;
+  width: 25%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition:1s;
+}
+.lesson:hover {
+	transform: scale(1.025);
+}
+
+.lesson-icon {
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: #8a0487;
+  display: inline-block;
+  opacity: 0.8;
+	
+}
+
+.message {
+	/*margin: 30px;*/
+  padding: 5px 40px;
+   color: #8a0487;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 20px;
+}
+.message:hover {
+  background-color:#8a0487;
+  cursor: pointer;
+  color:white;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+#c-cpp-logo{
+	background-image: url('c-cpp.png');
+	background-size: cover;
+	height: 200px;
+}
+
+#html-css-logo{
+	background-image: url('html5-css3.png');
+	background-size: cover;
+	height: 200px;
+}
+
+#java-logo{
+	background-image: url('java.jpg');
+	background-size: cover;
+	height: 200px;
+}
+
+#python-logo{
+	background-image: url('python.jpg');
+	background-size: cover;
+	height: 200px;
+}
+
+.footer {
+	margin: 5% 0 0 0;
+	background-color:#f5f4ed;
+	color:black;
+	font-family: 'Poppins', cursive;
+	text-align: center;
+}
+.footer h2 {
+	text-align: center;
+	color: #8f8c85;
+}
+
+a{
+	text-decoration-color: none;
+	text-decoration: none;
+}
+
+@media all and (max-width: 670px){
+	.lesson-icon {
+	  align-items: center;
+	  overflow: hidden;
+	}
+
+	#c-cpp-logo{
+		background-image: url('c-cpp.png');
+		background-size: cover;
+		width: 200px;
+		height: 200px;
+	}
+
+	#html-css-logo{
+		background-image: url('html5-css3.png');
+		background-size: cover;
+		width: 200px;
+		height: 200px;
+	}
+
+	#java-logo{
+		background-image: url('java.jpg');
+		background-size: cover;
+		width: 200px;
+		height: 200px;
+	}
+
+	#python-logo{
+		background-image: url('python.jpg');
+		background-size: cover;
+		width: 200px;
+		height: 200px;
+	}
+	
+	.lesson-wrapper {
+	  height: 500px;
+	  width:400px;
+	  padding-bottom: 80px;
+	  background-color: #f7f7f7;
+	  margin: 0 auto;
+	}
+
+	.lessons {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	
+	.lesson {
+	  flex: auto;
+	  height: 450px;
+	  width: 500px;
+	  margin-bottom: 1%;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  transition:1s;
+	}
+	
+	.lesson:hover {
+		transform: scale(1.025);
+	}
+
+	.lesson-icon {
+	  align-items: center;
+	  width: 200px;
+	  height: 250px;
+	  margin-top: 5%;
+	  margin-left: 25%;
+	}
+
+	.footer {
+		margin: 350% 0 0 0;
+		text-align: center;
+		height:100%;
+		background-color:#f5f4ed;
+		color:black;
+		font-family: 'Poppins', cursive;
+	}
+	.footer h2 {
+		font-size: 18px;
+		color: #8f8c85;
+		text-align: center;
+	}
+	.btn {
+	  padding: 12px 24px;
+	  color: #8a0487;
+	  display: inline-block;
+	  opacity: 0.8;
+	}
+
+	.message {
+		/*margin: 30px;*/
+	  	padding: 5px 40px;
+	   	color: #8a0487;
+	  	background-color: transparent;
+	  	cursor: pointer;
+	  	transition: 1s;
+	  	border-radius: 20px;
+	}
+	.message:hover {
+	  background-color:#8a0487;
+	  cursor: pointer;
+	  color:white;
+	}
+
+	.message:active {
+	  position: relative;
+	  top: 7px;
+	  box-shadow: none;
+	}
+}
