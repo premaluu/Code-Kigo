@@ -65,7 +65,7 @@ body{
 .sym-cont:hover{
    width: 250px;
    border-radius: 50px;
-   background-image: linear-gradient(#ae00ff, #9e04b3);
+   background-image: linear-gradient(#ae08ff, #9e44b3);
 }
 
 #home{
@@ -182,7 +182,7 @@ body{
       text-align: center;
       letter-spacing: 5px;
       line-height: 50px;
-      background-color: rgba(0,0,0,0.7);
+      background-color: rgba(0,0,0,0.5);
       color: white;
    }
    #heading h1{
@@ -195,7 +195,7 @@ body{
       width: 300px;
       height: 100px;
       border-radius: 15px;
-      box-shadow: 2px 2px #c4c4be;
+      box-shadow: 2px 2px #ffff;
       transition: transform 0.5s;
    }
    #main .inner-article{
